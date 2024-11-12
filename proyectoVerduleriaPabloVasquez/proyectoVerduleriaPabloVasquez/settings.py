@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'proyectoVerduleriaPabloVasquez.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # Cambiar a MySQL
+        'NAME': 'verduleria',  # Nombre de la base de datos
+        'USER': 'root',            # Usuario de MySQL
+        'PASSWORD': 'YO.7531.kurumi',     # Contraseña de MySQL
+        'HOST': 'localhost',                   # Dirección del servidor (por defecto localhost)
+        'PORT': '3306',     
     }
 }
 

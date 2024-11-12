@@ -15,7 +15,10 @@ class Cliente(models.Model):
     preferencias = models.CharField(max_length=100)
     fecha_nacimiento = models.DateField()
     genero = models.CharField(max_length=100)
-
+    
+    def __str__(self):
+        return 'Nombre Cliente: ' + self.nombre_cliente + ' - Tipo Cliente: ' + self.tipo_cliente 
+    
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.CharField(max_length=200)
@@ -25,7 +28,9 @@ class Producto(models.Model):
     estado = models.CharField(max_length=100)
     observaciones = models.CharField(max_length=100)
     proveedores = models.CharField(max_length=100)
-
+    
+    def __str__(self):
+        return 'Nombre Producto: ' + self.nombre + ' - Categoría: ' + self.categoria + ' - Descripción: ' + self.descripcion
 
 
 
