@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djangoVerNombre'
+    'djangoVerPablo'
 ]
 
 MIDDLEWARE = [
@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'proyectoVerduleriaPabloVasquez.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Cambiar a MySQL
-        'NAME': 'verduleria',  # Nombre de la base de datos
-        'USER': 'root',            # Usuario de MySQL
-        'PASSWORD': 'YO.7531.kurumi',     # Contraseña de MySQL
-        'HOST': 'localhost',                   # Dirección del servidor (por defecto localhost)
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'verduleria',  
+        'USER': 'root',            
+        'PASSWORD': 'YO.7531.kurumi',     
+        'HOST': 'localhost',                   
         'PORT': '3306',     
     }
 }

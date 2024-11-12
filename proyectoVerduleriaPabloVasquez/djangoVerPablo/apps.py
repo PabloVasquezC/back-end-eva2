@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DjangovernombreConfig(AppConfig):
+class DjangoverpabloConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'djangoVerNombre'
+    name = 'djangoVerPablo'

@@ -23,7 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Ver Productos</a>
+                        <a class="nav-link active" href="{% url 'productos' %}">Ver Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'agregarProducto' %}">Agregar Producto</a>
                     </li>
                 </ul>
             </div>
@@ -31,7 +34,7 @@
     </nav>
 
     <div class="main flex-grow-1 d-flex flex-column justify-content-center">
-        <h1 class="text-center">Bienvenido a nuestra verdulería</h1>
+        <h1 class="text-center my-2">Bienvenido a nuestra verdulería</h1>
 
         <div class="d-flex justify-content-center">
             <div id="carouselExampleIndicators" class="carousel slide">
